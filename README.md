@@ -1,10 +1,10 @@
-# Claude Code и Codex в Казахстане, Узбекистане, Грузии, Армении и Кыргызстане: подключение и оплата в USDT
+# Claude Code и Codex в Казахстане, Узбекистане, Грузии, Армении и Кыргызстане: подключение и оплата без подписки
 
 > Репозиторий ведёт команда TeamoRouter. Шлюз, который используется в инструкции, — наш.
 
 ## Короткий ответ
 
-Claude Code и Codex ставятся из npm и умеют работать через сторонний API-шлюз: для Claude Code задаются адрес шлюза и ключ в переменных окружения, для Codex — файл `~/.codex/config.toml`. Входить в аккаунт Anthropic или ChatGPT не нужно. Один ключ [TeamoRouter](https://teamorouter.com/ru?utm_source=github&utm_medium=readme&utm_campaign=claude-code-kazakhstan-uzbekistan) работает с Claude, GPT-6, Gemini, DeepSeek и другими моделями, оплата — только за токены, без подписки. Баланс пополняется в USDT (сеть X Layer, от $5), а если у вас остался российский банк — в рублях.
+Claude Code и Codex ставятся из npm и умеют работать через сторонний API-шлюз: для Claude Code задаются адрес шлюза и ключ в переменных окружения, для Codex — файл `~/.codex/config.toml`. Входить в аккаунт Anthropic или ChatGPT не нужно. Один ключ [TeamoRouter](https://teamorouter.com/ru?utm_source=github&utm_medium=readme&utm_campaign=claude-code-kazakhstan-uzbekistan) работает с Claude, GPT-6, Gemini, DeepSeek и другими моделями, оплата — только за токены, без подписки. Баланс пополняется картой Visa или Mastercard не российского банка, а если у вас остался российский банк — в рублях.
 
 ## Кому это нужно
 
@@ -81,28 +81,9 @@ source ~/.zshrc
 - `base_url` — **с** `/v1` на конце (у Claude Code наоборот).
 - Модели: `gpt-6-sol` по умолчанию, `gpt-6-luna` для простых задач (в разы дешевле), `gpt-6-astra` для самых сложных (самая дорогая). Переключение в сессии — `/model`, быстрый режим — `/fast` (дороже).
 
-## Оплата в USDT
+## Оплата
 
-Нужны браузер на компьютере с расширением [OKX Wallet](https://chromewebstore.google.com/detail/okx-wallet/mcohilncbfahbmgdjkbpemcciiolgcge) и USDT в сети **X Layer** в этом кошельке (в блокчейне отображается как USD₮0, 1:1 к USDT). Баланс на бирже не считается, пока вы не выведете его в кошелёк.
-
-**Как перевести USDT в X Layer:**
-
-| Где USDT | Что делать |
-|---|---|
-| OKX | «Активы → Вывод» → USDT → сеть **X Layer** → адрес вашего OKX Wallet |
-| Binance | Вывод в сети **Arbitrum** на адрес OKX Wallet (это USDT0), затем перевод в X Layer на [usdt0.to](https://usdt0.to); нужно немного ETH в Arbitrum на газ |
-| Другая биржа | Сначала на аккаунт OKX по общей сети (например, TRC20), затем вывод в X Layer |
-| Нет аккаунта OKX или OKX недоступна в вашей стране | Раздел Transfer на [usdt0.to](https://usdt0.to): исходная сеть — где лежат USDT, целевая — X Layer; газ платится в исходной сети |
-
-Сначала отправьте небольшую сумму: самая частая ошибка — неверная сеть.
-
-**Пополнение:**
-
-1. Откройте окно пополнения в консоли, выберите сумму (минимум $5) и нажмите **«Оплатить криптовалютой»**.
-2. Подтвердите подключение кошелька и переключение на X Layer (в первый раз — добавление сети).
-3. Подпишите запрос. Это разрешение EIP-3009 только на эту сумму, одноразовое и с ограниченным сроком; транзакцию в сеть отправляем мы, поэтому OKB на газ не нужен. Сумма может показываться в единицах с 6 знаками: `5000000` — это 5 USDT.
-
-Ошибки и подробности — в статье [«Как оплатить Claude API в USDT»](https://teamorouter.com/ru/blogs/pay-claude-with-usdt?utm_source=github&utm_medium=readme&utm_campaign=claude-code-kazakhstan-uzbekistan).
+**Картой Visa или Mastercard не российского банка** (например, казахстанского, грузинского или армянского). Переключите язык сайта на English ([teamorouter.com](https://teamorouter.com/?utm_source=github&utm_medium=readme&utm_campaign=claude-code-kazakhstan-uzbekistan)), откройте окно пополнения в консоли и выберите сумму: оплата проходит через Stripe, в долларах.
 
 **В рублях.** Если у вас остался российский банк или кошелёк ЮMoney, в [русской версии сайта](https://teamorouter.com/ru?utm_source=github&utm_medium=readme&utm_campaign=claude-code-kazakhstan-uzbekistan) в окне пополнения есть СБП, Т-Банк, ЮMoney и SberPay (платёж проводит Payssion, минимум $5).
 
@@ -118,7 +99,7 @@ source ~/.zshrc
 
 **Сколько стоит?** Цены по каждой модели — на [странице цен](https://teamorouter.com/ru?utm_source=github&utm_medium=readme&utm_campaign=claude-code-kazakhstan-uzbekistan#pricing).
 
-**Можно оплатить с телефона?** Для USDT нужен браузер на компьютере с OKX Wallet: в мобильных браузерах расширения кошелька обычно нет.
+**Можно оплатить с телефона?** Да, и картой, и через СБП / SberPay / Т-Банк / ЮMoney.
 
 **Куда писать по оплате?** Telegram [@teamorouter](https://t.me/teamorouter).
 
