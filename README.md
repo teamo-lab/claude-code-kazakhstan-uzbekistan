@@ -108,3 +108,4 @@ source ~/.zshrc
 - [Claude Code в России: установка, ошибки, оплата](https://teamorouter.com/ru/blogs/claude-code-in-russia?utm_source=github&utm_medium=readme&utm_campaign=claude-code-kazakhstan-uzbekistan)
 - [Codex в России: config.toml и частые ошибки](https://teamorouter.com/ru/blogs/codex-in-russia?utm_source=github&utm_medium=readme&utm_campaign=claude-code-kazakhstan-uzbekistan)
 - [Создать API-ключ](https://teamorouter.com/dashboard?tab=api-keys&utm_source=github&utm_medium=readme&utm_campaign=claude-code-kazakhstan-uzbekistan)
+- [Новые модели в день релиза: ID, официальные цены, примеры кода](https://github.com/teamo-lab/new-llm-api-releases#русский)
